@@ -100,7 +100,7 @@
           <a href="mailto:zhangjinrui@csu.edu"><i class="fa fa-envelope" style="font-size:18px"></i><b> Email</b></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <a href="https://scholar.google.com/citations?user=isizOkYAAAAJ"><i class="ai ai-fw ai-google-scholar " style="font-size:18px"></i><b> Google Scholar</b> </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <a href="https://github.com/zhangjinrui1992"><i class="fa fa-github" style="font-size:18px"></i><b> Github</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="zhangjinrui1992.github.io/cv.pdf"><i class="fa fa-file" style="font-size:16px"></i><b> CV</b></a>
+          <a href="https://zhangjinrui1992.github.io/cv.pdf"><i class="fa fa-file" style="font-size:16px"></i><b> CV(last updated: 2022.06)</b></a>
         </p>
         </tbody></table>
   </div>
@@ -126,14 +126,27 @@
     </p>
 
         <h4><li>Depth Estimation using On-deivce Dual Camerasbas</li></h4>
-        <img style="width:60%;" src="images/performance1.png"> 
-        
+        <p class="w3-center">
+        <img style="width:68%;" src="images/mobidepth_pipeline_new_2.png"> 
+        <br> <b>The system overview and workflow of MobiDepth.</b><br><br>
+        <img style="width:65%;" src="images/performance1.png"> 
+        <br> <b>Example results of ARCore depth maps <br>and the depth maps output by MobiDepth with the person moving.
+          </b>
+        </p>       
         <p class="w3-justify">
          The initial idea was came up in about 2021 when dining with some friends at Beijing. While binocular depth estimation is a mature technique, it is challenging to realize the technique on commodity mobile devices due to the different focal lengths and unsynchronized frame flows of the on-device dual cameras and the heavy stereo-matching algorithm. Even the ARCore and the ARKit are the most common solution adopted by existing mobile systems, they requrie the camera to be moving and expects the target object to be stationary, which significantly restricts its usage scenarios.  To this end, we propose MobiDepth, a real-time depth estimation system using the widely-available on-device dual cameras. MobiDepth resolves all the issues of the three existing solutions, i.e., it does not rely on any dedicated sensors or pre-training, and works well for target objects in motion.
         </p> 
 
         <h4><li>MobiPose/MVPose : Realtime Multi-Person Pose Estimation on Mobile Devices</li></h4>
-        <img style="width:60%;" src="images/MVPose2.png"> 
+        <p class="w3-center">
+          <img style="width:70%;" src="images/arch1.png"> 
+          <br> <b>The system architecture and workflow of MVPose.</b><br><br>
+          <img style="width:65%;" src="images/MVPose2.png"> 
+          <br> <b>Example results of MVPose from live videos.
+            </b>
+          </p>  
+
+       
         <p class="w3-justify">
         The initial verison of MobiPose was accepted by ACM SenSys 2020, which achieved over 20 frames per second pose estimation with 3 persons per frame, and significantly outperforms the state-of-the-art baseline(MobineNetV3-SSDLite+PoseNet), with a speedup of up to 4.5 and 2.8 in latency on CPU andGPU, respectively, and an improvement of 5.1% in pose-estimation model accuracy. The second version, MVPose took a motion-vector-based approach to fast and accurately track the human keypoints across consecutive frames, rather than running expensive human-detection model and pose-estimation model for every frame, which achieved over <span style="color:red">30</span>  frames per second pose estimation with <span style="color:red">4</span> persons per frame.
         </p> 
