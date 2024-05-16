@@ -8,8 +8,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="description" content="Jinrui Zhang is currently a Ph.D. student at TCLab in Central South University researcher.">
-  <meta name="keywords" content="Jinrui Zhang, 章晋睿,  Deep Learning, Central South University, CSU, Computer, Vision">
+  <meta name="description" content=" Jinrui Zhang is currently an assistant researcher at Tsinghua University.">
+  <meta name="keywords" content="Jinrui Zhang, 章晋睿,  Deep Learning, Tsinghua University, THU, Computer, Vision">
   <meta name="author" content="Jinrui Zhang" />
 
   <link rel="stylesheet" href="w3.css">
@@ -114,8 +114,9 @@
   <div class="w3-container  w3-padding-32" id="news">
    <h2>News</h2>
    <ul>
-      <p><li> [2023/08]<sup><span style="color:red"><strong>New</strong></span></sup> Our paper, "Ego3DPose: Capturing 3D Cues from Binocular Egocentric Views", was accepted by ACM SIGGRAPH Asia 2023! Congratulations to Taeho Kang and other great coauthors.  </li></p>
-      <p><li> [2023/07]<sup><span style="color:red"><strong>New</strong></span></sup> Our paper, "HiMoDepth: Efficient Training-free High-resolution On-device Depth Perception", was accepted by IEEE Transactions on Mobile Computing!</li></p>
+      <p><li> [2024/03]<sup><span style="color:red"><strong>New</strong></span></sup> Our paper, "MBSeg: Real-Time Contour-Based Method Instance Segmentation for Egocentric Vision", was accepted by IEEE Internet of Things Journal! Congratulations to Wei Luo and other great coauthors.  </li></p>
+      <p><li> [2023/08] Our paper, "Ego3DPose: Capturing 3D Cues from Binocular Egocentric Views", was accepted by ACM SIGGRAPH Asia 2023! Congratulations to Taeho Kang and other great coauthors.  </li></p>
+      <p><li> [2023/07] Our paper, "HiMoDepth: Efficient Training-free High-resolution On-device Depth Perception", was accepted by IEEE Transactions on Mobile Computing!</li></p>
    	  <p><li> [2022/08] Our paper, "MobiDepth: Real-Time Depth Estimation Using On-Device Dual Cameras", was accepted by <strong>ACM MobiCom'22</strong> !</li></p>
       <p><li> [2022/01] Our paper,"MVPose: Realtime Multi-Person Pose Estimation using Motion Vector on Mobile Devices", was accepted by IEEE Transactions on Mobile Computing!</li></p>
       <p><li> [2021/08] I joined the Insitute for AI Industry Research(AIR), Tsinghua University. Mentor: Prof.Yunxin Liu.</li></p>
@@ -130,10 +131,10 @@
   <div class="w3-container w3-padding-32" id="projects">
     <h2>Researchs</h2>
     <p class="w3-justify">
-        My research interests on mobile computing and edge computing, including AR/VR, intelligent edge/mobile systems, mobile sensing and applications of machine learning.      
+        My research interests in mobile computing and edge computing, including AR/VR, intelligent edge/mobile systems, mobile sensing, and applications of machine learning.      
     </p>
 
-        <h4><li>Depth Estimation using On-deivce Dual Camerasbas</li></h4>
+        <h4><li>Depth Estimation using On-device Dual Camerasbas</li></h4>
         <p class="w3-center">
         <img style="width:68%;" src="images/mobidepth_pipeline_new_3.png"> 
         <br> <b>The system overview and workflow of MobiDepth.</b><br><br>
@@ -142,10 +143,10 @@
           </b>
         </p>       
         <p class="w3-justify">
-         The initial idea was came up in about 2021 when dining with some friends at Beijing. While binocular depth estimation is a mature technique, it is challenging to realize the technique on commodity mobile devices due to the different focal lengths and unsynchronized frame flows of the on-device dual cameras and the heavy stereo-matching algorithm. Even the ARCore and the ARKit are the most common solution adopted by existing mobile systems, they requrie the camera to be moving and expects the target object to be stationary, which significantly restricts its usage scenarios.  To this end, we propose MobiDepth, a real-time depth estimation system using the widely-available on-device dual cameras. MobiDepth resolves all the issues of the three existing solutions, i.e., it does not rely on any dedicated sensors or pre-training, and works well for target objects in motion.
+         The initial idea came up in about 2021 when dining with some friends at Beijing. While binocular depth estimation is a mature technique, it is challenging to realize the technique on commodity mobile devices due to the different focal lengths and unsynchronized frame flows of the on-device dual cameras and the heavy stereo-matching algorithm. Even the ARCore and the ARKit are the most common solution adopted by existing mobile systems, they requrie the camera to be moving and expects the target object to be stationary, which significantly restricts its usage scenarios.  To this end, we propose MobiDepth, a real-time depth estimation system using the widely-available on-device dual cameras. MobiDepth resolves all the issues of the three existing solutions, i.e., it does not rely on any dedicated sensors or pre-training, and works well for target objects in motion.
         </p> 
 
-        <h4><li>MobiPose/MVPose : Realtime Multi-Person Pose Estimation on Mobile Devices</li></h4>
+        <h4><li>MobiPose/MVPose: Realtime Multi-Person Pose Estimation on Mobile Devices</li></h4>
         <p class="w3-center">
           <img style="width:70%;" src="images/arch1.png"> 
           <br> <b>The system architecture and workflow of MVPose.</b><br><br>
@@ -156,8 +157,8 @@
 
        
         <p class="w3-justify">
-        The initial verison of MobiPose was accepted by ACM SenSys 2020, which achieved over 20 frames per second pose estimation with 3 persons per frame, and significantly outperforms the state-of-the-art baseline(MobineNetV3-SSDLite+PoseNet), with a speedup of up to 4.5 and 2.8 in latency on CPU andGPU, respectively, and an improvement of 5.1% in pose-estimation model accuracy. 
-        <br><br>The second version, MVPose took a motion-vector-based approach to fast and accurately track the human keypoints across consecutive frames, rather than running expensive human-detection model and pose-estimation model for every frame, which achieved over <span style="color:red">30</span>  frames per second pose estimation with <span style="color:red">4</span> persons per frame.
+        The initial version of MobiPose was accepted by ACM SenSys 2020, which achieved over 20 frames per second pose estimation with 3 persons per frame, and significantly outperforms the state-of-the-art baseline(MobineNetV3-SSDLite+PoseNet), with a speedup of up to 4.5 and 2.8 in latency on CPU andGPU, respectively, and an improvement of 5.1% in pose-estimation model accuracy. 
+        <br><br>The second version, MVPose took a motion-vector-based approach to fast and accurately track the human key points across consecutive frames, rather than running an expensive human-detection model and pose-estimation model for every frame, which achieved over <span style="color:red">30</span>  frames per second pose estimation with <span style="color:red">4</span> persons per frame.
         </p> 
 
   </div>
@@ -217,7 +218,7 @@
          <p>
           <li><strong>HiMoDepth: Efficient Training-free High-resolution On-device Depth Perception</strong>
           <br>
-          Author : <strong>J. Zhang</strong>, H. Yang, J. Ren, D. Zhang, B. He, Y. Lee, T. Cao, Y. Li, Y. Zhang and Y. Liu. 
+          Author: <strong>J. Zhang</strong>, H. Yang, J. Ren, D. Zhang, B. He, Y. Lee, T. Cao, Y. Li, Y. Zhang and Y. Liu. 
           <br>
           <em>IEEE Transactions on Mobile Computing</em>, to appear. (<span style="color: rgba(140, 0, 255, 0.859)">CCF-A/Top-tier academic journal</span>)
           <br>
@@ -227,11 +228,21 @@
       <p>
       <li><strong>MVPose: Realtime Multi-Person Pose Estimation using Motion Vector on Mobile Devices</strong>
       <br>
-      Author : <strong>J. Zhang</strong>, D. Zhang, H. Yang, Y. Liu,J. Ren, X. Xu, F. Jia, and Y. Zhang.
+      Author: <strong>J. Zhang</strong>, D. Zhang, H. Yang, Y. Liu,J. Ren, X. Xu, F. Jia, and Y. Zhang.
       <br>
       <em>IEEE Transactions on Mobile Computing</em>, to appear. (<span style="color: rgba(140, 0, 255, 0.859)">CCF-A/Top-tier academic journal</span>)
       <br>
       <a style="color: #447ec9" href="https://ieeexplore.ieee.org/abstract/document/9673682">paper</a> | <a style="color: #4f5155" href="">code</a> | <a style="color: #4f5155" href="">slides</a> |  <a style="color: #447ec9" href="data/mvpose_tmc.bib">cite</a>
+      </p>
+      
+      <p>
+      <li><strong>MBSeg: Real-Time Contour-Based Method Instance Segmentation for Egocentric Vision</strong>
+      <br>
+      Author: W. Luo, D. Zhang, <strong>J. Zhang</strong>, B. Wen, W. Sun, H. Yang, J. Ren.
+      <br>
+      <em>IEEE Internet of Things Journal</em>, to appear. (<span style="color: rgba(140, 0, 255, 0.859)">Q1</span>)
+      <br>
+      <a style="color: #447ec9" href="https://ieeexplore.ieee.org/abstract/document/10474095">paper</a> | <a style="color: #4f5155" href="">code</a> | <a style="color: #4f5155" href="">slides</a> |  <a style="color: #447ec9" >cite</a>
       </p>
       </ul>
 
